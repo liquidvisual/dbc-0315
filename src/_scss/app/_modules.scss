@@ -8,9 +8,10 @@
 // Variables
 //-----------------------------------------------------------------
 
-$logo-width-small: rem-calc(420) !default;
+$logo-width-small: rem-calc(120) !default;
 $symbol-width-small: rem-calc(435) !default;
 $symbol-width-medium: $symbol-width-small*2 !default;
+$symbol-gap-width: 60 !default;
 
 //-----------------------------------------------------------------
 // Media Symbol Container
@@ -29,6 +30,8 @@ $symbol-width-medium: $symbol-width-small*2 !default;
 		padding-bottom: 0;
 		margin-bottom: 0;
 
+		margin: rem-calc(0 $symbol-gap-width); // match space between symbols
+
 		@media (min-height: 900px) {
 			width: $symbol-width-medium;
 		}
@@ -36,6 +39,7 @@ $symbol-width-medium: $symbol-width-small*2 !default;
 
 	.media-symbol .img {
 		width: 100%; // for IE
+		box-shadow: inset 0px 0px 0px 1px $primary-color; // hack the svg rendering appearance in IE
 	}
 }
 
@@ -49,6 +53,8 @@ $symbol-width-medium: $symbol-width-small*2 !default;
 	overflow: hidden;
 	z-index: 1;
 	background: #eee;
+
+	opacity: 0; // show with JS
 }
 
 //=========================================
@@ -84,6 +90,7 @@ $symbol-width-medium: $symbol-width-small*2 !default;
 //=========================================
 
 .media-symbol-close-btn {
+	@include transition(color);
 	display: block;
 	font-size: rem-calc(30);
 	color: white;
@@ -104,6 +111,12 @@ $symbol-width-medium: $symbol-width-small*2 !default;
 	}
 }
 
+.media-symbol-close-btn:hover {
+	@media #{$medium-up} {
+	    color: black;
+	}
+}
+
 //=========================================
 // Media Symbol Video
 //=========================================
@@ -112,30 +125,43 @@ $symbol-width-medium: $symbol-width-small*2 !default;
 	position: absolute;
 	top: 0;
 	left: 0;
-	border: 1px solid $primary-color;
-	height: 100%;
-	background-color: white;
+	// border: 200px solid black; //$primary-color;
+
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+
+	// background-color: white;
 	background-repeat: no-repeat;
 	background-position: center center;
-	transition: 1s opacity;
 	z-index: -1;
 
 	-webkit-background-size: cover;
 	   -moz-background-size: cover;
 	     -o-background-size: cover;
 	        background-size: cover;
+
+    @media #{$devices-only} {
+		width: 100%;
+    }
 }
 
-.media-symbol .text {
+//=========================================
+// Media Symbol Header
+//=========================================
+
+.media-symbol .header {
 	position: absolute;
 	top: 50%;
-	margin-top: -20px;
+	margin-top: -25px;
 	left: 0;
 	width: 100%;
 	font-weight: 500;
 	font-size: rem-calc(35);
 	color: white;
 	text-align: center;
+	padding: 0;
 }
 
 //=========================================

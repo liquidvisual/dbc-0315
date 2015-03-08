@@ -56,7 +56,7 @@ body {
 
     display: table;
     // height: 100vh;
-    width: $symbol-width-small * 5 + $logo-width-small;
+    width: ($symbol-width-small + $symbol-gap-width/8) * 5 + $logo-width-small; // 8 is magic
     margin: 0 auto;
     // overflow: hidden;
 
@@ -65,7 +65,7 @@ body {
     }
 
     @media (min-height: 900px) {
-        width: $symbol-width-medium * 5 + $logo-width-small;
+        width: ($symbol-width-medium + $symbol-gap-width/8) * 5 + $logo-width-small;
     }
 }
 

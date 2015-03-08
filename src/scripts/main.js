@@ -17,6 +17,10 @@ $(document).ready(function() {
 
 $(window).load(function() {
     NProgress.done();
+
+    $('.media-symbol').each(function(index){
+        $(this).css({ opacity: 0 }).transition({ opacity: 1, delay: 400*index }, 2000);
+    });
 });
 
 // window.onload = function(){
@@ -46,9 +50,9 @@ $('.js-media-symbol').each(function(){
         $mediaSymbolText = $('.media-symbol-text', $(this).parent());
 
         if ($mediaSymbolText.is(':visible')) {
-            $mediaSymbolText.addClass('hide');
+            $mediaSymbolText.addClass('hide').attr('style', '');
         } else {
-            $mediaSymbolText.removeClass('hide').addClass('animated fadeIn');
+            $mediaSymbolText.removeClass('hide').css({ 'opacity': 0 }).transition({ opacity: 1 }); //.addClass('animated fadeIn');
         }
     });
 
@@ -69,6 +73,10 @@ $("html, body").mousewheel(function(event, delta) {
         event.preventDefault();
     }
 });
+
+
+
+
 
 //-----------------------------------------------------------------
 // Offcanvas Menu

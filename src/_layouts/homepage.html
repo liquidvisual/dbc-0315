@@ -9,15 +9,16 @@ layout: master
 	<ul class="small-block-grid-1 medium-block-grid-5">
 		{% for item in media_sections %}
 			<li>
-				<a class="media-symbol js-media-symbol" href="#">
-					<h2 class="text">{{ item.title }}</h2>
+				<a class="media-symbol js-media-symbol wow fadeIn" data-wow-duration="1s" data-wow-delay="{{forloop.index}}s" href="#">
+					<h2 class="header">{{ item.title }}</h2>
 					<img class="img" src="/img/template/symbol-{{forloop.index}}.svg" alt="">
+					<!-- <video></video> -->
 
 					<!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
 					<video autoplay poster="/img/content/symbol-{{forloop.index}}.jpg" id="bgvid" loop>
 						<!-- <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm"> -->
 						<!-- <source src="//demosthenes.info/assets/videos/polina.mp4" type="video/mp4"> -->
-						<!-- <source src="/img/content/ocean.mp4" type="video/mp4"> -->
+						<!-- <source src="/img/content/polina.mp4" type="video/mp4"> -->
 					</video>
 				</a>
 				{% for text in item.text %}
