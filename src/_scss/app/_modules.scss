@@ -1,0 +1,116 @@
+/*
+    MODULES.CSS
+
+    - Last updated: 07.03.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+
+$logo-width-small: rem-calc(420) !default;
+$symbol-width-small: rem-calc(435) !default;
+$symbol-width-medium: $symbol-width-small*2 !default;
+
+//-----------------------------------------------------------------
+// Media Symbol Container
+//-----------------------------------------------------------------
+
+.media-symbol-container {
+
+	@media #{$medium-up} {
+	    display: table-cell;
+	    vertical-align: middle;
+	}
+
+	> ul > li {
+		position: relative; // risky?
+		width: $symbol-width-small;
+		padding-bottom: 0;
+		margin-bottom: 0;
+
+		@media (min-height: 900px) {
+			width: $symbol-width-medium;
+		}
+	}
+
+	.media-symbol .img {
+		width: 100%; // for IE
+	}
+}
+
+//=========================================
+// Media Symbol
+//=========================================
+
+.media-symbol {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background: #eee;
+}
+
+.media-symbol-close-btn {
+	display: block;
+	font-size: rem-calc(30);
+	color: white;
+	margin-bottom: rem-calc(10);
+}
+
+//=========================================
+// Media Text
+//=========================================
+
+.media-symbol-text {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	width: rem-calc(250);
+
+	p {
+		line-height: 1.2;
+	}
+}
+
+
+
+//=========================================
+// Media Symbol Video
+//=========================================
+
+.media-symbol video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px solid $primary-color;
+	height: 100%;
+	background-color: white;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: 1s opacity;
+	z-index: -1;
+
+	-webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+.media-symbol .text {
+	position: absolute;
+	top: 50%;
+	margin-top: -20px;
+	left: 0;
+	width: 100%;
+	font-weight: 500;
+	font-size: rem-calc(35);
+	color: white;
+	text-align: center;
+}
+
+//=========================================
+//
+//=========================================
+

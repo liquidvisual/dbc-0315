@@ -1,0 +1,46 @@
+/*
+    FONTS.CSS
+
+    - Last updated: 08.03.15
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Gravu
+//-----------------------------------------------------------------
+
+@font-face {
+    font-family: 'GravurCon';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/GravurCon.eot');
+    src: local('☺'),
+        url('../fonts/GravurCon.woff') format('woff'),
+        url('../fonts/GravurCon.tff') format('truetype'),
+        url('../fonts/GravurCon.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'GravurCon';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Junction-webfont.eot');
+    src: local('☺'),
+        url('../fonts/GravurConBol.woff') format('woff'),
+        url('../fonts/GravurConBol.tff') format('truetype'),
+        url('../fonts/GravurConBol.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'GravurCon';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/Junction-webfont.eot');
+    src: local('☺'),
+        url('../fonts/GravurConLig.woff') format('woff'),
+        url('../fonts/GravurConLig.tff') format('truetype'),
+        url('../fonts/GravurConLig.svg') format('svg');
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
