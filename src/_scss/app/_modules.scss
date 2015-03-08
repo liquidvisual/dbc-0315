@@ -51,30 +51,58 @@ $symbol-width-medium: $symbol-width-small*2 !default;
 	background: #eee;
 }
 
-.media-symbol-close-btn {
-	display: block;
-	font-size: rem-calc(30);
-	color: white;
-	margin-bottom: rem-calc(10);
-}
-
 //=========================================
 // Media Text
 //=========================================
 
 .media-symbol-text {
 	position: absolute;
-	right: 0;
-	bottom: 0;
 	z-index: 1;
 	width: rem-calc(250);
 
+	&.bottom {
+		width: rem-calc(250*2);
+	}
+
+	&.top { top: 0; }
+	&.bottom { bottom: 0 }
+	&.left { left: 0 }
+	&.right { right: 0 }
+
 	p {
 		line-height: 1.2;
+		font-size: rem-calc(16);
+
+		@media (min-height: 900px) {
+			font-size: rem-calc(21);
+		}
 	}
 }
 
+//=========================================
+// Media Symbol Close Button
+//=========================================
 
+.media-symbol-close-btn {
+	display: block;
+	font-size: rem-calc(30);
+	color: white;
+	margin-bottom: rem-calc(10);
+
+	&.right, &.left, &.bottom {
+		// float: none !important;
+		position: absolute;
+		top: -10px;
+	}
+
+	&.right {
+		right: -40px;
+	}
+
+	&.left {
+		left: -40px;
+	}
+}
 
 //=========================================
 // Media Symbol Video

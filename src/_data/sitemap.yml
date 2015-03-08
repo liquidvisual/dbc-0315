@@ -1,23 +1,49 @@
-- title: Home
-  url: /
+- title: about
+  text:
+    - title: lorem ipsum
+      text_layout: 'bottom right'
+      close_btn_layout: 'top'
+      body: |
+        Duis mollis Est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.<br><br>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum.
 
-- title: About
-  url: /about/
+- title: services
+  text:
+    - title: lorem ipsum
+      text_layout: 'top right'
+      close_btn_layout: 'left'
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
 
-- title: Services
-  url: /services/
-  include_children_in_nav: true
-  children:
-    - title: Service One
-      url: /services/service-one/
-    - title: Service Two
-      url: /services/service-two/
+- title: resources
+  text:
+    - title: text heading 1
+      text_layout: 'bottom left'
+      close_btn_layout: 'left'
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+    - title: text heading 2
+      text_layout: 'top right'
+      close_btn_layout: 'left'
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
 
-- title: Portfolio
-  url: /portfolio/
+- title: links
+  text:
+    - title: text heading 1
+      text_layout: 'top left'
+      close_btn_layout: 'right'
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
+    - title: text heading 2
+      text_layout: 'bottom left'
+      close_btn_layout: 'top'
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!
 
-- title: Blog
-  url: /blog/
-
-- title: Contact
-  url: /contact/
+- title: contact
+  text:
+    - title: text heading 1
+      text_layout: 'top right'
+      close_btn_layout: 'left'
+      body: |
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio repellat, nihil fuga provident ab delectus ex hic odit, eum ipsam a commodi impedit omnis fugiat maxime at necessitatibus, quasi eligendi!

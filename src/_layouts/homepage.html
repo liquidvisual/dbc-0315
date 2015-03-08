@@ -3,26 +3,30 @@ layout: master
 ---
 
 {% assign settings = site.data.settings %}
+{% assign media_sections = site.data.sitemap %}
 
 <div class="media-symbol-container">
 	<ul class="small-block-grid-1 medium-block-grid-5">
-		{% for i in (1..5) %}
+		{% for item in media_sections %}
 			<li>
 				<a class="media-symbol js-media-symbol" href="#">
-					<h2 class="text">lorem ipsum</h2>
-					<img class="img" src="/img/template/symbol-{{i}}.svg" alt="">
+					<h2 class="text">{{ item.title }}</h2>
+					<img class="img" src="/img/template/symbol-{{forloop.index}}.svg" alt="">
 
 					<!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-					<video autoplay poster="/img/content/symbol-{{i}}.jpg" id="bgvid" loop>
+					<video autoplay poster="/img/content/symbol-{{forloop.index}}.jpg" id="bgvid" loop>
 						<!-- <source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm"> -->
 						<!-- <source src="//demosthenes.info/assets/videos/polina.mp4" type="video/mp4"> -->
 						<!-- <source src="/img/content/ocean.mp4" type="video/mp4"> -->
 					</video>
 				</a>
-				<div class="media-symbol-text hide lv-unselectableX">
-					<a class="media-symbol-close-btn js-media-symbol-close-btn" href="#">✕</a>
-					<p>Duis mollis Est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna.<br><br>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum.</p>
-				</div>
+				{% for text in item.text %}
+					<div class="media-symbol-text hide lv-unselectable {{ text.text_layout }}">
+						<a class="media-symbol-close-btn js-media-symbol-close-btn {{ text.close_btn_layout }}" href="#">✕</a>
+						{{ text.body | markdownify }}
+					</div>
+				{% endfor %}
+
 			</li>
 		{% endfor %}
 	</ul>
