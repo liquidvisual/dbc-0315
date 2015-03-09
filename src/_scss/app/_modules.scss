@@ -115,9 +115,7 @@ $symbol-gap-width: 60 !default;
 }
 
 .media-symbol-close-btn:hover {
-	@media #{$medium-up} {
-	    color: black;
-	}
+	color: black;
 }
 
 //=========================================
@@ -147,8 +145,8 @@ $symbol-gap-width: 60 !default;
 	        background-size: cover;
 
     @media #{$devices-only} {
-		width: 100%; // need?
-		height: 100%;
+		// width: 100%; // need?
+		// height: 100%;
     }
 }
 
