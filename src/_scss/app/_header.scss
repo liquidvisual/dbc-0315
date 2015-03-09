@@ -12,15 +12,13 @@
 //-----------------------------------------------------------------
 
 .global-header {
+	// display: none;
 	color: black;
 	text-align: center;
 	padding: rem-calc(20);
+	// background: green;
 
-	@media (min-height: 900px) {
-		width: $logo-width-small;
-	}
-
-	@media #{$medium-up} {
+	@media #{$medium-up}, (min-height: 900px) {
 		display: table-cell;
 	    vertical-align: middle;
 	    width: $logo-width-small;
