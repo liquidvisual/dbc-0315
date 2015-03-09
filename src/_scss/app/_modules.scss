@@ -128,12 +128,13 @@ $symbol-gap-width: 60 !default;
 	position: absolute;
 	top: 0;
 	left: 0;
-	// border: 200px solid black; //$primary-color;
 
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
+	// min-width: 100%;
+	// min-height: 100%;
+	// width: auto;
+	// height: auto;
+
+	height: 100%;
 
 	// background-color: white;
 	background-repeat: no-repeat;
@@ -146,8 +147,13 @@ $symbol-gap-width: 60 !default;
 	        background-size: cover;
 
     @media #{$devices-only} {
-		// width: 100%; // need?
+		width: 100%; // need?
+		height: 100%;
     }
+}
+
+video::-webkit-media-controls {
+    display: none !important; // hacky
 }
 
 //=========================================
