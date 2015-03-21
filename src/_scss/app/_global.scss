@@ -27,19 +27,17 @@ body {
     // overflow-x: scroll;
 }
 
+//-----------------------------------------------------------------
+// Scroller
+//-----------------------------------------------------------------
+
 .lv-scroller {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    // width: 100%;
-    // height: 100%;
-    // overflow: auto;
-}
-
-#mCSB_1_container {
-    height: 100%; // keep for reference
+    // overflow: hidden;
 }
 
 //-----------------------------------------------------------------
@@ -48,9 +46,9 @@ body {
 
 .lv-page {
     height: 100%;
-    // height: 100vh;
-    // width: auto;//($symbol-width-small + $symbol-gap-width/8) * 5 + $logo-width-small; // 8 is magic
     margin: 0 auto;
+    // height: 100vh;
+    // width: auto;//($symbol-width-medium + $symbol-gap-width/8) * 5 + $logo-width-small; // 8 is magic
     // overflow: hidden;
 
     @media #{$small-only} {
@@ -58,13 +56,14 @@ body {
         padding: rem-calc(0 15); // gutter
     }
 
-    @media #{$medium-up} {
+    // Page extends to fill horizontal axis
+    @media #{$large-up} {
         display: table;
-        width: ($symbol-width-small + $symbol-gap-width/8) * 5 + $logo-width-small; // 8 is magic
+        width: ($symbol-width-medium + $symbol-gap-width/8) * 5 + $logo-width-small; // 8 is magic
     }
 
     @media #{$large-up} and (min-height: 900px) {
-        width: ($symbol-width-medium + $symbol-gap-width/8) * 5 + $logo-width-small;
+        width: ($symbol-width-large + $symbol-gap-width/8) * 5 + $logo-width-small;
     }
 }
 

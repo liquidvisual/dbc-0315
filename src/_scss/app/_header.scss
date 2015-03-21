@@ -14,8 +14,9 @@
 .global-header {
 	padding: rem-calc(20);
 	text-align: center;
+	display: none;
 
-	@media #{$medium-up}, (min-height: 900px) {
+	@media #{$large-up} {
 		display: table-cell;
 	    vertical-align: middle;
 	    width: $logo-width-small;

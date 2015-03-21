@@ -1,18 +1,12 @@
 /*
     MODULES.CSS
 
-    - Last updated: 07.03.15
+    - Last updated: 21.03.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
-
-$logo-width-small: rem-calc(120) !default;
-$symbol-width-small: rem-calc(435) !default;
-$symbol-width-medium: $symbol-width-small*2 !default;
-$symbol-gap-width: 60 !default;
-
 //-----------------------------------------------------------------
 // Media Symbol Container
 //-----------------------------------------------------------------
@@ -29,14 +23,14 @@ $symbol-gap-width: 60 !default;
 		padding-bottom: 0;
 		margin-bottom: 0;
 
-		@media #{$medium-up} {
-			width: $symbol-width-small;
+		@media #{$large-up} {
+			width: $symbol-width-medium;
 			margin: rem-calc(0 $symbol-gap-width); // match space between symbols
 		}
 
 		// If iPad horizontal OR big height = larger symbols
 		@media #{$large-up} and (min-height: 900px) {
-			width: $symbol-width-medium;
+			width: $symbol-width-large;
 		}
 	}
 
@@ -46,9 +40,25 @@ $symbol-gap-width: 60 !default;
 	}
 }
 
-//=========================================
+//-----------------------------------------------------------------
+// Block Grid
+//-----------------------------------------------------------------
+
+.media-symbol-block-grid {
+	@include block-grid($per-row: 1);
+
+	@media #{$large-up} {
+	    @include block-grid($per-row: 5);
+	}
+
+	@media #{$medium-up} {
+		margin: 0;
+	}
+}
+
+//-----------------------------------------------------------------
 // Media Symbol
-//=========================================
+//-----------------------------------------------------------------
 
 .media-symbol {
 	display: block;
@@ -65,18 +75,28 @@ $symbol-gap-width: 60 !default;
 //=========================================
 
 .media-symbol-text {
-	position: absolute;
 	z-index: 1;
-	width: rem-calc(250);
+	// width: 100%;
+
+	@media #{$large-up} {
+		position: absolute;
+	    width: rem-calc(250);
+	}
 
 	&.bottom {
-		width: rem-calc(250*2);
+		@media #{$large-up} {
+		    // width: rem-calc(250*2);
+		}
 	}
 
 	&.top { top: 0; }
 	&.bottom { bottom: 0 }
 	&.left { left: 0 }
-	&.right { right: 0 }
+	&.right {
+		@media #{$medium-up} {
+		    right: 0;
+		 }
+	}
 
 	p {
 		line-height: 1.2;
@@ -99,14 +119,21 @@ $symbol-gap-width: 60 !default;
 	color: white;
 	margin-bottom: rem-calc(10);
 
+	@media #{$devices-only} {
+		float: none !important;
+	}
+
 	&.right, &.left, &.bottom {
-		// float: none !important;
-		position: absolute;
-		top: -10px;
+		@media #{$large-up} {
+		    position: absolute;
+		    top: -10px;
+		}
 	}
 
 	&.right {
-		right: -40px;
+		@media #{$large-up} {
+			right: -40px;
+		}
 	}
 
 	&.left {

@@ -33,8 +33,14 @@ function screenData() {
     }
     var screenWidth = $(window).width();
     var screenHeight = $(window).height();
+    var device;
 
-    $('.lv-screen-data').text(screenWidth+" x "+screenHeight);
+    if (screenWidth <= 480) device = "Small";
+    if (screenWidth > 480 && screenWidth <= 767) device = "Medium";
+    if (screenWidth > 767 && screenWidth <= 1024) device = "Large";
+    if (screenWidth > 1024) device = "xLarge";
+
+    $('.lv-screen-data').html(screenWidth+" x "+screenHeight+"<br>"+device);
 }
 
 screenData();
