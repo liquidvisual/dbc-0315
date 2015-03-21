@@ -14,7 +14,6 @@
 .global-header {
 	padding: rem-calc(20);
 	text-align: center;
-	display: none;
 
 	@media #{$large-up} {
 		display: table-cell;

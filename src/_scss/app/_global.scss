@@ -72,16 +72,16 @@ body {
 //-----------------------------------------------------------------
 
 .lv-screen-data {
-    display: none;
+    // display: none;
 }
 
-.dev .lv-screen-data {
-    display: block;
+.lv-screen-data {
+    // display: block;
     position: fixed;
     top: 0;
     padding: rem-calc(10 20);
     z-index: 9000;
-    background: #282828;
+    background: rgba(0,0,0,0.5);
     color: white;
 }
 
