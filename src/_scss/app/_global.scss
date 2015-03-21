@@ -72,6 +72,20 @@ body {
 // lv-super: top-most non-visual wrapper | lv-page: visual wrapper
 //-----------------------------------------------------------------
 
+.lv-screen-data {
+    display: none;
+}
+
+.dev .lv-screen-data {
+    display: block;
+    position: fixed;
+    top: 0;
+    padding: rem-calc(10 20);
+    z-index: 9000;
+    background: #282828;
+    color: white;
+}
+
 //=========================================
 //
 //=========================================

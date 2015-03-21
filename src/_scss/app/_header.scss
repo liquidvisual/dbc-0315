@@ -12,11 +12,8 @@
 //-----------------------------------------------------------------
 
 .global-header {
-	// display: none;
-	color: black;
-	text-align: center;
 	padding: rem-calc(20);
-	// background: green;
+	text-align: center;
 
 	@media #{$medium-up}, (min-height: 900px) {
 		display: table-cell;

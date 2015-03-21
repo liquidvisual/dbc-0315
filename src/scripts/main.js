@@ -23,6 +23,26 @@ $(window).load(function() {
     });
 });
 
+//-----------------------------------------------------------------
+// Screen Data Tool
+//-----------------------------------------------------------------
+
+function screenData() {
+    if ($('.lv-screen-data').length != 1) {
+        $('.lv-super').append('<div class="lv-screen-data"></div>');
+    }
+    var screenWidth = $(window).width();
+    var screenHeight = $(window).height();
+
+    $('.lv-screen-data').text(screenWidth+" x "+screenHeight);
+}
+
+screenData();
+
+$(window).resize(function(){
+    screenData();
+});
+
 // window.onload = function(){
 //     // NProgress.done();
 // }
