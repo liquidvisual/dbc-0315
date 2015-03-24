@@ -13,24 +13,26 @@
 
 .media-symbol-container {
 
-	@media #{$medium-up} {
+	// @media #{$medium-up} {
 	    display: table-cell;
 	    vertical-align: middle;
-	}
+	// }
 
 	> ul > li {
 		position: relative; // risky?
 		padding-bottom: 0;
 		margin-bottom: 0;
 
-		@media #{$large-up} {
-			width: $symbol-width-medium;
+		// @media #{$large-up} {
+			// width: $symbol-width-medium;
+			// width: calc(100vh - 100px);
+			width: $symbol-width;
 			margin: rem-calc(0 $symbol-gap-width); // match space between symbols
-		}
+		// }
 
 		// If iPad horizontal OR big height = larger symbols
 		@media #{$large-up} and (min-height: 900px) {
-			width: $symbol-width-large;
+			// width: $symbol-width-large;
 		}
 	}
 
@@ -45,15 +47,15 @@
 //-----------------------------------------------------------------
 
 .media-symbol-block-grid {
-	@include block-grid($per-row: 1);
+	// @include block-grid($per-row: 1);
 
-	@media #{$large-up} {
+	// @media #{$large-up} {
 	    @include block-grid($per-row: 5);
-	}
+	// }
 
-	@media #{$medium-up} {
+	// @media #{$medium-up} {
 		margin: 0;
-	}
+	// }
 }
 
 //-----------------------------------------------------------------

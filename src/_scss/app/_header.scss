@@ -15,12 +15,12 @@
 	padding: rem-calc(20);
 	text-align: center;
 
-	@media #{$large-up} {
+	// @media #{$large-up} {
 		display: table-cell;
 	    vertical-align: middle;
 	    width: $logo-width-small;
 	    padding: rem-calc(0 15);
-	}
+	// }
 
 	a {
 		color: black;

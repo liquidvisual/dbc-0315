@@ -111,10 +111,10 @@ $('.js-media-symbol').each(function(){
 //-----------------------------------------------------------------
 
 $("html, body").mousewheel(function(event, delta) {
-    if ($(window).width() > 640) {
+    // if ($(window).width() > 640) {
         this.scrollLeft -= (delta * 1);
         event.preventDefault();
-    }
+    // }
 });
 
 

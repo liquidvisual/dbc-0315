@@ -8,9 +8,12 @@
 // Global Variables
 //-----------------------------------------------------------------
 
-$symbol-width-medium: rem-calc(650);
-$symbol-width-large: rem-calc(870);
-$symbol-gap-width: 60;
+$symbol-width: calc(100vh - 80px);  // match this in global - can't do calc with variables - long story
+
+// $symbol-width-small: rem-calc(30);
+// $symbol-width-medium: rem-calc(450); //rem-calc(650);
+// $symbol-width-large: rem-calc(870);
+$symbol-gap-width: 60px;
 
 //=========================================
 // Logo
