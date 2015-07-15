@@ -1,9 +1,9 @@
-New Project
+dbc-0315
 =============================
 
 ## To Run
 
-    git clone git@github.com:liquidvisual/URL-GOES-HERE.git
+    git clone git@github.com:liquidvisual/dbc-0315.git
     bundle install
     npm install
     bower install
