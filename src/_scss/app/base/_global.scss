@@ -1,7 +1,7 @@
 /*
     GLOBAL.CSS
 
-    - Last updated: 07.03.15
+    - Last updated: 14.07.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -16,16 +16,10 @@
 
 html, body {
     -webkit-overflow-scrolling: touch;
-
-    @media #{$medium-up} {
-        // overflow-y: hidden;
-    }
 }
 
-body {
-    // overflow-y: hidden;
-    // overflow-x: scroll;
-}
+// NOTE: Cannot put overflow commands here - as it will conflict
+// with the horizontal scrolling.
 
 //-----------------------------------------------------------------
 // Scroller
@@ -53,42 +47,24 @@ body {
 
     // uncomment for mobile experience
 
-    // @media #{$small-only} {
-    //     width: auto;
-    //     padding: rem-calc(0 15); // gutter
-    // }
+    @media #{$small-only} {
+        width: auto;
+        padding: rem-calc(0 15); // gutter
+    }
 
     // Page extends to fill horizontal axis
-    // @media #{$large-up} {
+    @media #{$large-up} {
         display: table;
         // width: ($symbol-width-medium + $symbol-gap-width/8) * 5 + $logo-width-small; // 8 is magic
         // width: (#{$symbol-width} + $symbol-gap-width/8) * 5 + $logo-width-small; // 8 is magic
 
         // 80px (80/2=40px) is the vertical bleed for images
         width: calc(#{$logo-width-small} + ((100vh - 80px) + #{$symbol-gap-width*2}) * 5);
-    // }
+    }
 
     // @media #{$large-up} and (min-height: 900px) {
         // width: ($symbol-width-large + $symbol-gap-width/8) * 5 + $logo-width-small;
     // }
-}
-
-//-----------------------------------------------------------------
-// lv-super: top-most non-visual wrapper | lv-page: visual wrapper
-//-----------------------------------------------------------------
-
-.lv-screen-data {
-    // display: none;
-}
-
-.lv-screen-data {
-    // display: block;
-    position: fixed;
-    top: 0;
-    padding: rem-calc(10 20);
-    z-index: 9000;
-    background: rgba(0,0,0,0.5);
-    color: white;
 }
 
 //=========================================

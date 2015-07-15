@@ -1,22 +1,22 @@
 # GLOBAL SITE SETTINGS
 
 # General
-seo_title: ""
-title: ""
-company: ""
-description: ""
+seo_title: "DB + Co: Dennis Ballestring and Co - Expert Advice + Personal Service"
+title: "DB + Co"
+company: "DB + Co"
+description: "DB&Co is an experienced and trusted chartered accountancy firm located in the heart of Adelaide's Central Business District."
 
 # Contact Info
-email: test@example.com
-phone: (05) 555 555
-fax: (05) 555 555
-address: "ABC Street, Earth"
+email: taxadvice@dbco.com.au
+phone: +61 8 8223 5688
+fax: +61 8 8223 5662
+address: "274 Angas St, Adelaide SA 5000 (08) 8223 5688"
 
 # Social Networks
 facebook: ""
 
 # Google Map
-google_map: ""
+google_map: "https://www.google.com.au/maps/place/Dennis+Ballestrin+%26+Co/@-34.929314,138.610937,15z/data=!4m2!3m1!1s0x0:0xe361d52e40bc6514!6m1!1e1"
 
 # Google Analytics
 google_analytics: "UA-XXXXXXXX-X"

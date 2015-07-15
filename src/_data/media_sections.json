@@ -1,0 +1,95 @@
+[
+    {
+        "title": "about",
+        "symbol": "/img/template/symbol-plus.svg",
+        "image": "/img/content/video/video-1.png",
+        "video": "video-1",
+        "text_position": "mid-left",
+        "text": [
+            {
+                "body": '<p>DB + Co are a team of experienced business consultants. We are communicators, putting ourselves in your place to provide you with relevant, proactive strategies that minimise taxation and facilitate wealth creation.</p>'
+            },
+            {
+                "body": '<p>DB + Co cater to all size businesses — we are innovative and flexible, and draw on a large network of professional expertise. Our bottom line is to improve your bottom line.</p>'
+            }
+        ]
+    },
+    {
+        "title": "services",
+        "symbol": "/img/template/symbol-minus.svg",
+        "image": "/img/content/video/video-2.png",
+        "video": "video-2",
+        "text_position": "top-left",
+        "text": [
+            {
+                "body": "<h3>Cloud Accounting</h3>
+
+                <p>Safe and secure, DB + Co Cloud Accounting is a ‘live link’ to your accounts and data. It helps us identify current spending inefficiencies, evaluate KPIs and plan for your BAS.</p>
+
+                <h3>Taxation</h3>
+
+                <p>DB + Co minimise the impact of tax. We are experienced, informed and up-to-date with tax laws, and have an excellent reputation with the ATO. We provide the best possible tax outcome.</p>"
+            },
+            {
+                "body": '<h3>Business Advice</h3>
+                        <p>DB + Co offer considered and constructive advice for new ventures and existing business. Our consultation service is proactive and ongoing because we want you to be successful, make money and secure your future.</p>'
+            }
+        ]
+    },
+    {
+        "title": "resources",
+        "symbol": "/img/template/symbol-cross.svg",
+        "image": "/img/content/video/video-3.png",
+        "video": "video-3",
+        "text_position": "bottom-left",
+        "text": [
+            {
+                "body": '<p>These PDFs are useful tax resources for individuals and businesses. The pre-tax checklist provides an overview of tax deductions, while the Diary lists important dates in the financial year.<br>
+                <a href="#">+ Pre-Tax Checklist (PDF)</a><br>
+                <a href="#">+ Diary Dates (PDF)</a></p>'
+            }
+        ]
+    },
+    {
+        "title": "links",
+        "symbol": "/img/template/symbol-slash.svg",
+        "image": "/img/content/video/video-4.png",
+        "video": "video-4",
+        "text_position": "top-left",
+        "text": [
+            {
+                "body": '<p>Here are some links to relevant bodies and organisations. Of course, DB + Co are just phone call away. <br>
+                        <a href="#">+ Australian Taxation Office</a><br>
+                        <a href="#">+ Institute of Chartered Accountants (Australia)</a><br>
+                        <a href="#">+ Australian Securities Exchange </a><br>
+                        <a href="#">+ Association of Superannuation Funds of Australia Limited</a><br>
+                        <a href="#">+ National Information Centre on Retirement Investments</a></p>'
+            },
+            {
+                "body": '<p><a href="">+ Taxation Institute of Australia</a><br>
+                        <a href="#">+ Financial Planning Association of Australia</a><br>
+                        <a href="#">+ Business SA</a><br>
+                        <a href="#">+ Australian Securities and Investment Commission</a><br>
+                        <a href="#">+ National Tax and Accountants Association</a><br>
+                        <a href="#">+ Australian Bureau of Statistics</a><br>
+                        <a href="#">+ AusIndustry</a></p>'
+            }
+        ]
+    },
+    {
+        "title": "contact",
+        "symbol": "/img/template/symbol-equals.svg",
+        "image": "/img/content/video/video-5.png",
+        "video": "video-5",
+        "text_position": "mid-right",
+        "text": [
+            {
+                "body": ""
+            },
+            {
+                "body": "<p>DB + Co<br> 274 Angas Street Adelaide SA 5000<br>
+                T +61 8 8223 5688 F +61 8 8223 5662 E taxadvice@dbco.com.au</p>"
+            }
+        ]
+    }
+]

@@ -37,10 +37,8 @@
 // Layout
 //=========================================
 
-@import "app/layout/footer";
 @import "app/layout/header";
-@import "app/layout/navigation";
-@import "app/layout/sidebar";
+@import "app/layout/media-container";
 
 //=========================================
 // Components
@@ -58,7 +56,7 @@
 // Modules
 //=========================================
 
-@import "app/modules/modules";
+@import "app/modules/media-symbol";
 @import "app/modules/sections";
 @import "app/modules/gallery";
 @import "app/modules/hero";

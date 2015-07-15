@@ -24,12 +24,8 @@
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
 
-    <!-- Google Fonts CDN -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
-
     <!-- build:css({src,.tmp}) /assets/css/minified.css -->
     <link rel="stylesheet" href="/_bower_components/animate.css/animate.min.css">
-    <link rel="stylesheet" href="/_bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
     <link rel="stylesheet" href="/css/main.css">
     <!-- endbuild -->
 
@@ -38,9 +34,8 @@
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
 </head>
 <body>
-    <div class="lv-super developerX dev">
-
-    <div class="lv-scroller">
+    <div class="lv-super dev-mode-enabledX">
+        <div class="lv-scroller">
             <div class="lv-page">
 
                 <!-- HEADER -->
@@ -51,8 +46,7 @@
                 {{ content }}
 
             </div> <!-- .lv-page -->
-        </div>
-
+        </div> <!-- .lv-scroller -->
     </div> <!-- .lv-super -->
 
     <!--[if lt IE 9]>
@@ -75,6 +69,7 @@
     <script src="/_bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
     <script src="/_bower_components/nprogress/nprogress.js"></script>
     <script src="/scripts/main.js"></script>
+    <script src="/scripts/responsive-helper.js"></script>
     <!-- endbuild -->
 
     {% comment %}

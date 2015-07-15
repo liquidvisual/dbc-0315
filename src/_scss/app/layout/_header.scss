@@ -1,7 +1,7 @@
 /*
     HEADER.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 14.07.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -12,26 +12,39 @@
 //-----------------------------------------------------------------
 
 .global-header {
-	padding: rem-calc(20);
+	padding: rem-calc(40 20);
 	text-align: center;
 
-	// @media #{$large-up} {
+	@media #{$large-up} {
 		display: table-cell;
 	    vertical-align: middle;
 	    width: $logo-width-small;
 	    padding: rem-calc(0 15);
-	// }
-
-	a {
-		color: black;
-		font-size: rem-calc(35);
 	}
 
-	.white {
-		color: white;
+	//=========================================
+	// Logo
+	//=========================================
+
+	.logo img {
+		width: rem-calc(100);
 	}
 }
 
 //=========================================
-//
+// Swipe Hint for Large Touch
 //=========================================
+
+// .swipe-hint {
+// 	display: none;
+// }
+
+// .touch .swipe-hint {
+// 	@media #{$large-up} {
+// 	    display: block;
+// 		position: fixed;
+// 		// top: rem-calc(50);
+// 		bottom: 20px;
+// 		left: 20px;
+// 	}
+// }

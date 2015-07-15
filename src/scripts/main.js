@@ -24,34 +24,8 @@ $(window).load(function() {
 });
 
 //-----------------------------------------------------------------
-// Screen Data Tool
+//
 //-----------------------------------------------------------------
-
-function screenData() {
-    if ($('.lv-screen-data').length != 1) {
-        $('.lv-super').append('<div class="lv-screen-data"></div>');
-    }
-    var screenWidth = $(window).width();
-    var screenHeight = $(window).height();
-    var device;
-
-    if (screenWidth <= 480) device = "Small";
-    if (screenWidth > 480 && screenWidth <= 767) device = "Medium";
-    if (screenWidth > 767 && screenWidth <= 1024) device = "Large";
-    if (screenWidth > 1024) device = "xLarge";
-
-    $('.lv-screen-data').html(screenWidth+" x "+screenHeight+"<br>"+device);
-}
-
-screenData();
-
-$(window).resize(function(){
-    screenData();
-});
-
-// window.onload = function(){
-//     // NProgress.done();
-// }
 
 // $(document).ready(function() {
 //     $('.lv-scrollerX').mCustomScrollbar({
@@ -62,22 +36,22 @@ $(window).resize(function(){
     // $('.lv-scroller').mCustomScrollbar("destroy");
 // });
 
-// $(function() {
+$(function() {
 
-//     // onload
-//     if(document.body.clientWidth >= 870) {
-//         $('video').attr('autoplay', true);
-//     }
+    // onload
+    if (document.body.clientWidth >= 1024) {
+        $('video').attr('autoplay', true);
+    }
 
-//     // If you want to autoplay when the window resized wider than 780px
-//     // after load, you can add this:
+    // If you want to autoplay when the window resized wider than 1024px
+    // after load, you can add this:
 
-//     $(window).resize(function() {
-//         if(document.body.clientWidth >= 870) {
-//             $('video').attr('autoplay', true);
-//         }
-//     });
-// });
+    $(window).resize(function() {
+        if (document.body.clientWidth >= 1024) {
+            $('video').attr('autoplay', true);
+        }
+    });
+});
 
 //-----------------------------------------------------------------
 //
@@ -93,62 +67,30 @@ $('.js-media-symbol').each(function(){
         $mediaSymbolText = $('.media-symbol-text', $(this).parent());
 
         if ($mediaSymbolText.is(':visible')) {
-            $mediaSymbolText.addClass('hide').attr('style', '');
+            $mediaSymbolText.addClass('hide').removeClass('animated pulse').attr('style', '');
         } else {
-            $mediaSymbolText.removeClass('hide').css({ 'opacity': 0 }).transition({ opacity: 1 }); //.addClass('animated fadeIn');
+            $mediaSymbolText.removeClass('hide').addClass('animated pulse').css({ 'opacity': 0 }).transition({ opacity: 1 }); //.addClass('animated fadeIn');
         }
     });
 
     // Close the text
     $closeBtn.click(function(event){
         event.preventDefault();
-        $(this).parent().addClass('hide');
+        $(this).parent().parent().addClass('hide').removeClass('animated pulse');
     });
 });
 
 //-----------------------------------------------------------------
-//
+// Horizontal Scrolling
 //-----------------------------------------------------------------
 
 $("html, body").mousewheel(function(event, delta) {
-    // if ($(window).width() > 640) {
+    if ($(window).width() > 767) {
         this.scrollLeft -= (delta * 1);
         event.preventDefault();
-    // }
+    }
 });
 
-
-
-
-
-//-----------------------------------------------------------------
-// Offcanvas Menu
-//-----------------------------------------------------------------
-
-// $("#off-canvas-menu").mmenu({ "offCanvas": { "position": "right" }});
-
-//-----------------------------------------------------------------
-// Kickstart Foundation / Touch Conditionals
-//-----------------------------------------------------------------
-
-// var touchEvent = TOUCH_ENABLED ? "touchstart" : "click";
-
-//Trigger hamburger by touch on mobile - this eliminates glitch with FastClick.js
-// $('.hamburger').bind('click', function(e) {
-    // e.preventDefault();
-    // $('#off-canvas-menu').trigger('open.mm');
-// });
-
-if (TOUCH_ENABLED) {
-    // Make Accordion jump to the top of the heading on mobile
-    // http://foundation.zurb.com/forum/posts/1316-accordion-jump-to-top-when-active
-    /*$(document).foundation('accordion', {
-        callback: function (el){
-            var containerPos = $(el).parent().offset().top;
-            $('html, body').animate({ scrollTop: containerPos }, 300);
-        }
-    });*/
-}
 //-----------------------------------------------------------------
 // <= IE8 Caution Message
 //-----------------------------------------------------------------
@@ -162,14 +104,14 @@ if (TOUCH_ENABLED) {
 // Developer: COMMAND+S for screen width
 //==================================================
 
-$(document).keypress(function(event) {
-    if (event.which == 115 && (event.ctrlKey||event.metaKey)||(event.which == 19)) {
-        event.preventDefault();
-        alert("(w) "+$(window).width()+" (h) "+$(window).height());
-        return false;
-    }
-    return true;
-});
+// $(document).keypress(function(event) {
+//     if (event.which == 115 && (event.ctrlKey||event.metaKey)||(event.which == 19)) {
+//         event.preventDefault();
+//         alert("(w) "+$(window).width()+" (h) "+$(window).height());
+//         return false;
+//     }
+//     return true;
+// });
 //==================================================
 //
 //==================================================
