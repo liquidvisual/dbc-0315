@@ -106,15 +106,27 @@
 	}
 }
 
-// Special case - who knows
+//=========================================
+// *** Special Case: Contact ***
+//=========================================
+
 .mid-right {
+
+	// Has to be on large
 	@media #{$large-up} {
 	    overflow: hidden;
 	}
 
+	.row .columns {
+		@media #{$medium-only} {
+			width: auto; // prevent that slim column thing on landscape mobile
+		}
+	}
+
 	.media-symbol-close-btn {
 		position: relative;
-		left: 50%;
+		left: calc(50% + 15px);
+		// left: 50%;
 		top: 0;
 	}
 }

@@ -87,8 +87,12 @@
                 "body": ""
             },
             {
-                "body": "<p>DB + Co<br> 274 Angas Street Adelaide SA 5000<br>
-                T +61 8 8223 5688 F +61 8 8223 5662 E taxadvice@dbco.com.au</p>"
+                "body": '<p>DB + Co<br>
+                274 Angas Street<br>
+                Adelaide SA 5000<br><br>
+                T <a href="tel:61 8 8223 5688 ">+61 8 8223 5688 </a><br>
+                F +61 8 8223 5662 <br>
+                E <a href="mailto:taxadvice@dbco.com.au">taxadvice@dbco.com.au</a></p>'
             }
         ]
     }
