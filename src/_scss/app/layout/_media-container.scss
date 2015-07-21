@@ -27,6 +27,17 @@
 			width: $symbol-width;
 			margin: rem-calc(0 $symbol-gap-width); // match space between symbols
 		}
+
+		@media #{$large-up} and (min-height: 900px) {
+			padding: rem-calc(0 90%);
+		}
+	}
+
+	// Special case to coincide with code above
+	.media-symbol-text {
+		@media #{$large-up} and (min-height: 900px) {
+			margin: rem-calc(0 90%);
+		}
 	}
 
 	.media-symbol .img {
