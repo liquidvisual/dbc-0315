@@ -7,7 +7,7 @@ layout: master
 <div class="media-symbol-container">
 	<ul class="media-symbol-block-grid">
 		{% for item in media_sections %}
-			<li>
+			<li class="order-{{forloop.index}}">
 				<a class="media-symbol js-media-symbol" href="#">
 					<h2 class="header">{{ item.title }}</h2>
 					<div class="dark-tint-overlay"></div>
@@ -28,7 +28,7 @@ layout: master
 						<a class="media-symbol-close-btn js-media-symbol-close-btn show-for-large-up" href="#">✕</a>
 						<div class="row">
 							{% for text in item.text %}
-								<div class="medium-4 large-6 columns">
+								<div class="medium-6 columns">
 									{{ text.body }}
 								</div>
 							{% endfor %}

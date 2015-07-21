@@ -26,7 +26,7 @@
 
 .media-symbol-text {
 	position: relative;
-	z-index: 1;
+	z-index: 100;
 
 	@media #{$large-up} {
 		position: absolute;
