@@ -7,10 +7,12 @@ layout: master
 <div class="media-symbol-container">
 	<ul class="media-symbol-block-grid">
 		{% for item in media_sections %}
-			<li class="order-{{forloop.index}}">
-				<a class="media-symbol js-media-symbol" href="#">
+			<li class="order-{{forloop.index}} js-media-list-item">
+				<a class="media-symbol">
 					<h2 class="header">{{ item.title }}</h2>
 					<div class="dark-tint-overlay"></div>
+
+					<!-- Span wrapper for IE rendering hack -->
 					<img class="img" src="{{ item.symbol }}" alt="Symbol">
 
 					<!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
@@ -25,7 +27,7 @@ layout: master
 
 				<div class="media-symbol-text hide {{ item.text_position }}">
 					<div class="media-symbol-text-content">
-						<a class="media-symbol-close-btn js-media-symbol-close-btn show-for-large-up" href="#">✕</a>
+						<span class="media-symbol-close-btn js-media-symbol-close-btn show-for-large-up" href="#">✕</span>
 						<div class="row">
 							{% for text in item.text %}
 								<div class="medium-6 columns">

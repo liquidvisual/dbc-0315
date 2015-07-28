@@ -271,7 +271,7 @@ $paragraph-font-size: rem-calc(21); //1rem;
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
 $anchor-font-color: white; //$primary-color;
-$anchor-font-color-hover: black; //scale-color($primary-color, $lightness: -14%);
+$anchor-font-color-hover: darken(#676667, 20%);//black; //scale-color($primary-color, $lightness: -14%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;

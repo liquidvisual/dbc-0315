@@ -12,6 +12,7 @@
 //-----------------------------------------------------------------
 
 .media-symbol {
+	@extend .lv-unselectable;
 	display: block;
 	position: relative;
 	overflow: hidden;
@@ -36,6 +37,7 @@
 
 	.media-symbol-text-content {
 		@include transition('all');
+		@extend .lv-unselectable;
 
 		margin-top: 0;
 
@@ -73,7 +75,8 @@
 		right: 0;
 	}
 
-	p {
+	// Paragraphs and list items (links)
+	p, ul {
 		line-height: 1.2;
 		font-size: rem-calc(16);
 
@@ -94,6 +97,7 @@
 
 .media-symbol-close-btn {
 	@include transition(color);
+	cursor: pointer;
 	display: block;
 	font-size: rem-calc(30);
 	color: white;

@@ -44,9 +44,11 @@
         "text_position": "bottom-left",
         "text": [
             {
-                "body": '<p>These PDFs are useful tax resources for individuals and businesses. The pre-tax checklist provides an overview of tax deductions, while the Diary lists important dates in the financial year.<br>
-                <a href="#">+ Pre-Tax Checklist (PDF)</a><br>
-                <a href="#">+ Diary Dates (PDF)</a></p>'
+                "body": '<p>These PDFs are useful tax resources for individuals and businesses. The pre-tax checklist provides an overview of tax deductions, while the Diary lists important dates in the financial year.</p>
+                <ul>
+                    <li><a href="#pre-tax">Pre-Tax Checklist (PDF)</a></li>
+                    <li><a href="#diary-dates">Diary Dates (PDF)</a></li>
+                </ul>'
             }
         ]
     },
@@ -58,21 +60,25 @@
         "text_position": "top-left",
         "text": [
             {
-                "body": '<p>Here are some links to relevant bodies and organisations. Of course, DB + Co are just phone call away. <br>
-                        <a href="#">+ Australian Taxation Office</a><br>
-                        <a href="#">+ Institute of Chartered Accountants (Australia)</a><br>
-                        <a href="#">+ Australian Securities Exchange </a><br>
-                        <a href="#">+ Association of Superannuation Funds of Australia Limited</a><br>
-                        <a href="#">+ National Information Centre on Retirement Investments</a></p>'
+                "body": '<p>Here are some links to relevant bodies and organisations. Of course, DB + Co are just phone call away.</p>
+                        <ul>
+                            <li><a href="#">Australian Taxation Office</a></li>
+                            <li><a href="#">Institute of Chartered Accountants (Australia)</a></li>
+                            <li><a href="#">Australian Securities Exchange </a></li>
+                            <li><a href="#">Association of Superannuation Funds of Australia Limited</a></li>
+                            <li><a href="#">National Information Centre on Retirement Investments</a></li>
+                        </ul>'
             },
             {
-                "body": '<p><a href="">+ Taxation Institute of Australia</a><br>
-                        <a href="#">+ Financial Planning Association of Australia</a><br>
-                        <a href="#">+ Business SA</a><br>
-                        <a href="#">+ Australian Securities and Investment Commission</a><br>
-                        <a href="#">+ National Tax and Accountants Association</a><br>
-                        <a href="#">+ Australian Bureau of Statistics</a><br>
-                        <a href="#">+ AusIndustry</a></p>'
+                "body": '<ul>
+                            <li><a href="#">Taxation Institute of Australia</a></li>
+                            <li><a href="#">Financial Planning Association of Australia</a></li>
+                            <li><a href="#">Business SA</a></li>
+                            <li><a href="#">Australian Securities and Investment Commission</a></li>
+                            <li><a href="#">National Tax and Accountants Association</a></li>
+                            <li><a href="#">Australian Bureau of Statistics</a></li>
+                            <li><a href="#">AusIndustry</a></li>
+                        </ul>'
             }
         ]
     },

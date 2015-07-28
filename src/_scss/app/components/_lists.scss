@@ -15,23 +15,22 @@ ul li {
 	margin-bottom: rem-calc(5);
 }
 
-.triangle-list {
+.media-symbol-text-content ul {
 	list-style: none;
 	margin-left: 0;
+	padding-left: rem-calc(15);
 
 	li {
-		padding-left: rem-calc(8);
 		margin-bottom: rem-calc(5);
+		padding-bottom: 0;
 
 		a:before {
-			content: "\f0da";
+			// content: "\f0da";
 			// content: "\f04b";
-			font-family: "FontAwesome";
-			position: relative;
-			top: 1px;
-			left: -5px;
-			font-size: rem-calc(17);
-			color: $primary-color;
+			content: "+";
+			// font-family: "FontAwesome";
+			position: absolute;
+			left: rem-calc(15);
 		}
 	}
 

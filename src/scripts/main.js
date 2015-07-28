@@ -54,34 +54,34 @@ $(function() {
 });
 
 //-----------------------------------------------------------------
-//
+// Media Symbol Click - Show Text
 //-----------------------------------------------------------------
 
-$('.js-media-symbol').each(function(){
-    var $closeBtn = $('.media-symbol-close-btn', $(this).parent());
+$('.js-media-list-item').each(function(){
+    var transition = 'animated fadeIn';
 
     // click to show the text
     $(this).click(function(event){
-        event.preventDefault();
 
-        $mediaSymbolText = $('.media-symbol-text', $(this).parent());
+        var $this = $(this);
+
+        $mediaSymbolText = $('.media-symbol-text', $this);
 
         if ($mediaSymbolText.is(':visible')) {
-            $mediaSymbolText.addClass('hide').removeClass('animated pulse').attr('style', '');
+            $mediaSymbolText.addClass('hide').removeClass(transition);
         } else {
-            $mediaSymbolText.removeClass('hide').addClass('animated pulse').css({ 'opacity': 0 }).transition({ opacity: 1 }); //.addClass('animated fadeIn');
+            $mediaSymbolText.removeClass('hide').addClass(transition);
         }
-    });
-
-    // Close the text
-    $closeBtn.click(function(event){
-        event.preventDefault();
-        $(this).parent().parent().addClass('hide').removeClass('animated pulse');
     });
 });
 
+// Stop links from triggering the show/hide of above - links do their own thing
+$('.media-symbol-text-content a:not(.media-symbol-close-btn)').click(function(event){
+    event.stopPropagation();
+})
+
 //-----------------------------------------------------------------
-// Horizontal Scrolling
+// Best Performance Horizontal Scrolling
 //-----------------------------------------------------------------
 
 $("html, body").mousewheel(function(event, delta) {
