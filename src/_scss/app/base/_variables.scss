@@ -22,24 +22,24 @@ $symbol-width: calc(100vh - 80px);  // match this in global - can't do calc with
 $symbol-gap-width: 148px;
 
 //=========================================
-// Large Granular (width)
+// Large Granular (width)  ** WARNING - ZEROES NEED PIXELS FOR CALC, WHO KNOWS WHY **
 //=========================================
 
-$symbol-1-left-margin-large: 128px;
+$symbol-1-left-margin-large: 128px; // set
 $symbol-2-left-margin-large: 116px;
-$symbol-3-left-margin-large: 0;
-$symbol-4-left-margin-large: 0; // problem one
-$symbol-5-left-margin-large: 0;
+$symbol-3-left-margin-large: 0px;
+$symbol-4-left-margin-large: 0px; // problem one
+$symbol-5-left-margin-large: 0px;
 
 //=========================================
 // Large High Granular (width && 900 high)
 //=========================================
 
-$symbol-1-left-margin-large-high: 128px;
+$symbol-1-left-margin-large-high: 128px; // set
 $symbol-2-left-margin-large-high: 116px;
-$symbol-3-left-margin-large-high: 0;
-$symbol-4-left-margin-large-high: -116px; // problem one
-$symbol-5-left-margin-large-high: 0;
+$symbol-3-left-margin-large-high: 0px;
+$symbol-4-left-margin-large-high: 0px; // problem one -116px
+$symbol-5-left-margin-large-high: 0px;
 
 //=========================================
 // Logo

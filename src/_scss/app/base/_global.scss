@@ -1,14 +1,15 @@
 /*
     GLOBAL.CSS
 
-    - Last updated: 14.07.15
+    - Last updated: 06.08.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
 
-// $page-padding: rem-calc(40) !default;
+$all-symbol-gutters: $symbol-1-left-margin-large + $symbol-2-left-margin-large + $symbol-3-left-margin-large + $symbol-4-left-margin-large + $symbol-5-left-margin-large;
+$end-gutter: $symbol-2-left-margin-large / 2;
 
 //-----------------------------------------------------------------
 // Foundation Overrides (Hacks)
@@ -61,7 +62,8 @@ html, body {
         // 80px (80/2=40px) is the vertical bleed for images
         // width: calc(#{$logo-width-small} + ((100vh - 80px) + #{$symbol-gap-width*2}) * 5);
 
-        width: 9000px;
+        width: calc(#{$logo-width-small} + ((100vh - 80px) * 5) + #{$all-symbol-gutters} + #{$end-gutter}); // 58 = hack end gutter
+        // width: 9000px;
     }
 
     // @media #{$large-up} and (min-height: 900px) {

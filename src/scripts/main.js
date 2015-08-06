@@ -68,9 +68,9 @@ $('.js-media-list-item').each(function(){
         $mediaSymbolText = $('.media-symbol-text', $this);
 
         if ($mediaSymbolText.is(':visible')) {
-            $mediaSymbolText.addClass('hide').removeClass(transition);
+            $mediaSymbolText.addClass('hide').removeClass(transition).parent().removeClass('is-open');
         } else {
-            $mediaSymbolText.removeClass('hide').addClass(transition);
+            $mediaSymbolText.removeClass('hide').addClass(transition).parent().addClass('is-open');
         }
     });
 });

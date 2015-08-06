@@ -30,7 +30,7 @@
 		}
 
 		// *** HEIGHT SPEC ***
-		@media #{$large-up} and (min-height: 900px) {
+		@media #{$large-up} and (min-height: 670px) {
 			padding: rem-calc(0 10); // create distance from top like in psd - if changed, update variables
 		}
 	}
@@ -77,46 +77,56 @@
 	// PLUS
 	&.order-1 {
 		z-index: 5;
+		margin-bottom: -16%;
 
-		@media #{$large} { margin-left: $symbol-1-left-margin-large; }
-		@media #{$large-up} and (min-height: 900px) { margin-left: $symbol-1-left-margin-large-high; }
+		@media #{$large} { margin: 0 0 0 $symbol-1-left-margin-large; }
+		@media #{$large-up} and (min-height: 670px) { margin: 0 0 0 $symbol-1-left-margin-large-high; }
 	}
 
 	// MINUS
 	&.order-2 {
-		z-index: 4;
-		margin-top: -16%;
+		// z-index: 4;
+		margin-bottom: -26%;
 
-		@media #{$small-only}, #{$medium-only} { z-index: 3; }
 		@media #{$large} { margin: 0 0 0 $symbol-2-left-margin-large; }
-		@media #{$large-up} and (min-height: 900px) { margin: 0 0 0 $symbol-2-left-margin-large-high; }
+		@media #{$large-up} and (min-height: 670px) { margin: 0 0 0 $symbol-2-left-margin-large-high; }
 	}
 
 	// CROSS
 	&.order-3 {
-		// z-index: 3;
-		margin-top: -26%;
+		z-index: 4;
+		margin-bottom: -1%;
 
-		@media #{$small-only}, #{$medium-only} { z-index: 4; }
 		@media #{$large} { margin: 0 0 0 $symbol-3-left-margin-large; }
-		@media #{$large-up} and (min-height: 900px) { margin: 0 0 0 $symbol-3-left-margin-large-high; }
+		@media #{$large-up} and (min-height: 670px) { margin: 0 0 0 $symbol-3-left-margin-large-high; }
 	}
 
 	// SLASH
 	&.order-4 {
-		// z-index: 2;
-		margin-top: -1%;
+		margin-bottom: -8%;
 
 		@media #{$large} { margin: 0 0 0 $symbol-4-left-margin-large; }
-		@media #{$large-up} and (min-height: 900px) { margin: 0 0 0 $symbol-4-left-margin-large-high; }
+		@media #{$large-up} and (min-height: 670px) { margin: 0 0 0 $symbol-4-left-margin-large-high; }
 	}
 
 	// EQUALS
 	&.order-5 {
-		// z-index: 1;
-		margin-top: -8%;
-
 		@media #{$large} { margin: 0 0 0 $symbol-5-left-margin-large; }
-		@media #{$large-up} and (min-height: 900px) { margin-left: $symbol-5-left-margin-large-high; }
+		@media #{$large-up} and (min-height: 670px) { margin-left: $symbol-5-left-margin-large-high; }
+	}
+
+	//=========================================
+	// Prevent margin chaos when text is open
+	//=========================================
+
+	&.is-open {
+		margin-bottom: 0;
+	}
+
+	// PLUS - special case only
+	&.order-1.is-open {
+		@media #{$small-only} {
+		    margin-bottom: -26%;
+		}
 	}
 }
