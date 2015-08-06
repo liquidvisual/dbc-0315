@@ -12,7 +12,7 @@
 //-----------------------------------------------------------------
 
 .global-header {
-	padding: rem-calc(40 0 40 20);
+	padding: rem-calc(60 0 60 20);
 	text-align: center;
 
 	@media #{$large-up} {
@@ -30,21 +30,3 @@
 		width: rem-calc(92);
 	}
 }
-
-//=========================================
-// Swipe Hint for Large Touch
-//=========================================
-
-// .swipe-hint {
-// 	display: none;
-// }
-
-// .touch .swipe-hint {
-// 	@media #{$large-up} {
-// 	    display: block;
-// 		position: fixed;
-// 		// top: rem-calc(50);
-// 		bottom: 20px;
-// 		left: 20px;
-// 	}
-// }
