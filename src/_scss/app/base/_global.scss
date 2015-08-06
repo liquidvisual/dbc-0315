@@ -49,7 +49,7 @@ html, body {
 
     @media #{$small-only} {
         width: auto;
-        padding: rem-calc(0 15); // gutter
+        padding: rem-calc(0); // gutter // formerly 15 = removed
     }
 
     // Page extends to fill horizontal axis
@@ -59,7 +59,9 @@ html, body {
         // width: (#{$symbol-width} + $symbol-gap-width/8) * 5 + $logo-width-small; // 8 is magic
 
         // 80px (80/2=40px) is the vertical bleed for images
-        width: calc(#{$logo-width-small} + ((100vh - 80px) + #{$symbol-gap-width*2}) * 5);
+        // width: calc(#{$logo-width-small} + ((100vh - 80px) + #{$symbol-gap-width*2}) * 5);
+
+        width: 9000px;
     }
 
     // @media #{$large-up} and (min-height: 900px) {

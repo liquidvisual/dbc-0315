@@ -8,15 +8,41 @@
 // Global Variables
 //-----------------------------------------------------------------
 
+// recent
+// $symbol-width: calc(100vh - 80px);  // match this in global - can't do calc with variables - long story
+
+// 06.08.15
 $symbol-width: calc(100vh - 80px);  // match this in global - can't do calc with variables - long story
 
 // $symbol-width-small: rem-calc(30);
 // $symbol-width-medium: rem-calc(450); //rem-calc(650);
 // $symbol-width-large: rem-calc(870);
-$symbol-gap-width: 4px;// 60px;  // must be a set number (4), or else rendering bug in IE11 - who knows
+// $symbol-gap-width: 4px;// 60px;  // must be a set number (4), or else rendering bug in IE11 - who knows
+
+$symbol-gap-width: 148px;
+
+//=========================================
+// Large Granular (width)
+//=========================================
+
+$symbol-1-left-margin-large: 128px;
+$symbol-2-left-margin-large: 116px;
+$symbol-3-left-margin-large: 0;
+$symbol-4-left-margin-large: 0; // problem one
+$symbol-5-left-margin-large: 0;
+
+//=========================================
+// Large High Granular (width && 900 high)
+//=========================================
+
+$symbol-1-left-margin-large-high: 128px;
+$symbol-2-left-margin-large-high: 116px;
+$symbol-3-left-margin-large-high: 0;
+$symbol-4-left-margin-large-high: -116px; // problem one
+$symbol-5-left-margin-large-high: 0;
 
 //=========================================
 // Logo
 //=========================================
 
-$logo-width-small: rem-calc(300);
+$logo-width-small: rem-calc(142);

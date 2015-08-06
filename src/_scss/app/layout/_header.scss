@@ -12,14 +12,13 @@
 //-----------------------------------------------------------------
 
 .global-header {
-	padding: rem-calc(40 20);
+	padding: rem-calc(40 0 40 20);
 	text-align: center;
 
 	@media #{$large-up} {
 		display: table-cell;
 	    vertical-align: middle;
 	    width: $logo-width-small;
-	    width: 200px;
 	    padding: rem-calc(0 15);
 	}
 
@@ -28,7 +27,7 @@
 	//=========================================
 
 	.logo img {
-		width: rem-calc(100);
+		width: rem-calc(92);
 	}
 }
 

@@ -29,9 +29,8 @@
 //-----------------------------------------------------------------
 
 @import "app/base/variables";
-@import "app/base/fonts";
+@import "app/helpers/mixins";
 @import "app/base/global";
-@import "app/base/mixins";
 
 //=========================================
 // Layout
@@ -44,28 +43,15 @@
 // Components
 //=========================================
 
-@import "app/components/breadcrumbs";
-@import "app/components/buttons";
-@import "app/components/forms";
 @import "app/components/lists";
-@import "app/components/media";
-@import "app/components/social-networks";
+@import "app/components/media-symbol";
 @import "app/components/type";
-
-//=========================================
-// Modules
-//=========================================
-
-@import "app/modules/media-symbol";
-@import "app/modules/sections";
-@import "app/modules/gallery";
-@import "app/modules/hero";
-@import "app/modules/tabs";
 
 //=========================================
 // Helpers
 //=========================================
 
+@import "app/helpers/fonts";
 @import "app/helpers/special";
 @import "app/helpers/themes";
 
@@ -78,6 +64,6 @@
 // @import "../_bower_components/slick.js/slick/slick";
 @import "liquidvisual/vendor/foundation-icons";
 // @import "liquidvisual/vendor/magnific-popup/main";
-@import "liquidvisual/vendor/mmenu/main";
+// @import "liquidvisual/vendor/mmenu/main";
 @import "liquidvisual/vendor/nprogress";
 // @import "liquidvisual/vendor/prism";
