@@ -126,7 +126,8 @@
 	@include transition(color);
 	cursor: pointer;
 	display: block;
-	font-size: rem-calc(30);
+	font-size: rem-calc(40);
+	line-height: 1.2;
 	color: white;
 	margin-bottom: rem-calc(10);
 
