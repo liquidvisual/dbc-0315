@@ -41,7 +41,7 @@
         "symbol": "/img/template/symbol-cross.svg",
         "image": "/img/content/video/video-3.png",
         "video": "video-3",
-        "text_position": "bottom-left",
+        "text_position": "bottom-left-offset",
         "text": [
             {
                 "body": '<p>These PDFs are useful tax resources for individuals and businesses. The pre-tax checklist provides an overview of tax deductions, while the Diary lists important dates in the financial year.</p>
@@ -57,7 +57,7 @@
         "symbol": "/img/template/symbol-slash.svg",
         "image": "/img/content/video/video-4.png",
         "video": "video-4",
-        "text_position": "top-left",
+        "text_position": "top-left-offset",
         "text": [
             {
                 "body": '<p>Here are some links to relevant bodies and organisations. Of course, DB + Co are just phone call away.</p>

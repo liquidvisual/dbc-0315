@@ -19,27 +19,37 @@ $symbol-width: calc(100vh - 80px);  // match this in global - can't do calc with
 // $symbol-width-large: rem-calc(870);
 // $symbol-gap-width: 4px;// 60px;  // must be a set number (4), or else rendering bug in IE11 - who knows
 
-$symbol-gap-width: 148px;
+// $symbol-gap-width: 148px;
 
 //=========================================
 // Large Granular (width)  ** WARNING - ZEROES NEED PIXELS FOR CALC, WHO KNOWS WHY **
 //=========================================
 
 $symbol-1-left-margin-large: 128px; // set
-$symbol-2-left-margin-large: 116px;
+$symbol-2-left-margin-large: 67px;
 $symbol-3-left-margin-large: 0px;
 $symbol-4-left-margin-large: 0px; // problem one
 $symbol-5-left-margin-large: 0px;
 
 //=========================================
-// Large High Granular (width && 900 high)
+// Large High Granular (width && 670 high) - ipad landscape
 //=========================================
 
 $symbol-1-left-margin-large-high: 128px; // set
-$symbol-2-left-margin-large-high: 116px;
+$symbol-2-left-margin-large-high: 67px;
 $symbol-3-left-margin-large-high: 0px;
-$symbol-4-left-margin-large-high: 0px; // problem one -116px
+$symbol-4-left-margin-large-high: -67px; // problem one
 $symbol-5-left-margin-large-high: 0px;
+
+//=========================================
+// Large High Granular (width && 900 high)
+//=========================================
+
+$symbol-1-left-margin-large-highest: 128px; // set
+$symbol-2-left-margin-large-highest: 116px;
+$symbol-3-left-margin-large-highest: 0px;
+$symbol-4-left-margin-large-highest: -116px; // problem one -116px
+$symbol-5-left-margin-large-highest: 0px;
 
 //=========================================
 // Logo

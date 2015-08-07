@@ -64,14 +64,22 @@ $('.js-media-list-item').each(function(){
     $(this).click(function(event){
 
         var $this = $(this);
+        var isMobile = $(window).width() < 768;
+        var $mediaSymbolText = $('.media-symbol-text', $this);
 
-        $mediaSymbolText = $('.media-symbol-text', $this);
-
-        if ($mediaSymbolText.is(':visible')) {
+        // On Mobile - hit area is anywhere on the symbol
+        if ($mediaSymbolText.is(':visible') && isMobile) {
             $mediaSymbolText.addClass('hide').removeClass(transition).parent().removeClass('is-open');
         } else {
             $mediaSymbolText.removeClass('hide').addClass(transition).parent().addClass('is-open');
         }
+    });
+
+    // On desktop - only click will close the text
+    $('.media-symbol-close-btn', $(this)).click(function(event){
+        var $mediaSymbolText = $(this).parent().parent();
+        $mediaSymbolText.addClass('hide').removeClass(transition).parent().removeClass('is-open');
+        event.stopPropagation();
     });
 });
 

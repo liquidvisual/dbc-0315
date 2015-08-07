@@ -81,6 +81,7 @@
 
 		@media #{$large} { margin: 0 0 0 $symbol-1-left-margin-large; }
 		@media #{$large-up} and (min-height: 670px) { margin: 0 0 0 $symbol-1-left-margin-large-high; }
+		@media #{$large-up} and (min-height: 900px) { margin: 0 0 0 $symbol-1-left-margin-large-highest; }
 	}
 
 	// MINUS
@@ -90,6 +91,7 @@
 
 		@media #{$large} { margin: 0 0 0 $symbol-2-left-margin-large; }
 		@media #{$large-up} and (min-height: 670px) { margin: 0 0 0 $symbol-2-left-margin-large-high; }
+		@media #{$large-up} and (min-height: 900px) { margin: 0 0 0 $symbol-2-left-margin-large-highest; }
 	}
 
 	// CROSS
@@ -99,6 +101,7 @@
 
 		@media #{$large} { margin: 0 0 0 $symbol-3-left-margin-large; }
 		@media #{$large-up} and (min-height: 670px) { margin: 0 0 0 $symbol-3-left-margin-large-high; }
+		@media #{$large-up} and (min-height: 900px) { margin: 0 0 0 $symbol-3-left-margin-large-highest; }
 	}
 
 	// SLASH
@@ -107,12 +110,14 @@
 
 		@media #{$large} { margin: 0 0 0 $symbol-4-left-margin-large; }
 		@media #{$large-up} and (min-height: 670px) { margin: 0 0 0 $symbol-4-left-margin-large-high; }
+		@media #{$large-up} and (min-height: 900px) { margin: 0 0 0 $symbol-4-left-margin-large-highest; }
 	}
 
 	// EQUALS
 	&.order-5 {
 		@media #{$large} { margin: 0 0 0 $symbol-5-left-margin-large; }
-		@media #{$large-up} and (min-height: 670px) { margin-left: $symbol-5-left-margin-large-high; }
+		@media #{$large-up} and (min-height: 670px) { margin: 0 0 0 $symbol-5-left-margin-large-high; }
+		@media #{$large-up} and (min-height: 900px) { margin: 0 0 0 $symbol-5-left-margin-large-highest; }
 	}
 
 	//=========================================

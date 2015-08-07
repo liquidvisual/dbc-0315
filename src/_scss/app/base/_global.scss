@@ -8,7 +8,10 @@
 // Variables
 //-----------------------------------------------------------------
 
-$all-symbol-gutters: $symbol-1-left-margin-large + $symbol-2-left-margin-large + $symbol-3-left-margin-large + $symbol-4-left-margin-large + $symbol-5-left-margin-large;
+$all-symbol-gutters-large: $symbol-1-left-margin-large + $symbol-2-left-margin-large + $symbol-3-left-margin-large + $symbol-4-left-margin-large + $symbol-5-left-margin-large;
+$all-symbol-gutters-large-high: $symbol-1-left-margin-large-high + $symbol-2-left-margin-large-high + $symbol-3-left-margin-large-high + $symbol-4-left-margin-large-high + $symbol-5-left-margin-large-high;
+
+// adhoc
 $end-gutter: $symbol-2-left-margin-large / 2;
 
 //-----------------------------------------------------------------
@@ -46,8 +49,6 @@ html, body {
     // width: auto;//($symbol-width-medium + $symbol-gap-width/8) * 5 + $logo-width-small; // 8 is magic
     // overflow: hidden;
 
-    // uncomment for mobile experience
-
     @media #{$small-only} {
         width: auto;
         padding: rem-calc(0); // gutter // formerly 15 = removed
@@ -56,19 +57,14 @@ html, body {
     // Page extends to fill horizontal axis
     @media #{$large-up} {
         display: table;
-        // width: ($symbol-width-medium + $symbol-gap-width/8) * 5 + $logo-width-small; // 8 is magic
-        // width: (#{$symbol-width} + $symbol-gap-width/8) * 5 + $logo-width-small; // 8 is magic
-
-        // 80px (80/2=40px) is the vertical bleed for images
-        // width: calc(#{$logo-width-small} + ((100vh - 80px) + #{$symbol-gap-width*2}) * 5);
-
-        width: calc(#{$logo-width-small} + ((100vh - 80px) * 5) + #{$all-symbol-gutters} + #{$end-gutter}); // 58 = hack end gutter
+        width: calc(#{$logo-width-small} + ((100vh - 80px) * 5) + #{$all-symbol-gutters-large} + #{$end-gutter}); // 58 = hack end gutter
         // width: 9000px;
     }
 
-    // @media #{$large-up} and (min-height: 900px) {
-        // width: ($symbol-width-large + $symbol-gap-width/8) * 5 + $logo-width-small;
-    // }
+    // ** height **
+    @media #{$large-up} and (min-height: 670px)  {
+        width: calc(#{$logo-width-small} + ((100vh - 80px) * 5) + #{$all-symbol-gutters-large-high} + #{$end-gutter}); // 58 = hack end gutter
+    }
 }
 
 //=========================================

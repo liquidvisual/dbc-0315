@@ -21,6 +21,13 @@
 	z-index: 1;
 }
 
+// Hide hand cursor when open and on large
+.is-open .media-symbol {
+	@media #{$large-up} {
+	    cursor: auto;
+	}
+}
+
 //-----------------------------------------------------------------
 // Media Text
 //-----------------------------------------------------------------
@@ -62,31 +69,47 @@
 	}
 
 	//=========================================
-	// Positioning
+	// Positioning - on large only (absolute)
 	//=========================================
 
 	// About
 	&.mid-left {
-		top: 55%;
-		left: 0;
+		@media #{$large-up} {
+		    top: 55%;
+		    left: 0;
+		}
 	}
 
-	// Services + Links
+	// Services
 	&.top-left {
-		top: 0;
-		left: 0;
+		@media #{$large-up} {
+			top: 0;
+			left: 0;
+		}
 	}
 
 	// Resources
-	&.bottom-left {
-		bottom: 0;
-		left: 0;
+	&.bottom-left-offset {
+		@media #{$large-up} {
+			bottom: 0;
+			left: 11%;
+		}
+	}
+
+	// Links
+	&.top-left-offset {
+		@media #{$large-up} {
+			top: 0;
+			left: 11%;
+		}
 	}
 
 	// Contact
 	&.mid-right {
-		top: 44%;
-		right: 0;
+		@media #{$large-up} {
+			top: 44%;
+			right: 0;
+		}
 	}
 
 	-webkit-animation-duration: 0.6s;
