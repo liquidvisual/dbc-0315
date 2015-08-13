@@ -46,8 +46,8 @@
             {
                 "body": '<p>These PDFs are useful tax resources for individuals and businesses. The pre-tax checklist provides an overview of tax deductions, while the Diary lists important dates in the financial year.</p>
                 <ul>
-                    <li><a href="#pre-tax">Pre-Tax Checklist (PDF)</a></li>
-                    <li><a href="#diary-dates">Diary Dates (PDF)</a></li>
+                    <li><a href="#pre-tax-link-here">Pre-Tax Checklist (PDF)</a></li>
+                    <li><a href="#diary-dates-link-here">Diary Dates (PDF)</a></li>
                 </ul>'
             }
         ]
@@ -62,22 +62,22 @@
             {
                 "body": '<p>Here are some links to relevant bodies and organisations. Of course, DB + Co are just phone call away.</p>
                         <ul>
-                            <li><a href="#">Australian Taxation Office</a></li>
-                            <li><a href="#">Institute of Chartered Accountants (Australia)</a></li>
-                            <li><a href="#">Australian Securities Exchange </a></li>
-                            <li><a href="#">Association of Superannuation Funds of Australia Limited</a></li>
-                            <li><a href="#">National Information Centre on Retirement Investments</a></li>
+                            <li><a href="https://www.ato.gov.au/">Australian Taxation Office</a></li>
+                            <li><a href="http://www.charteredaccountants.com.au/">Institute of Chartered Accountants (Australia)</a></li>
+                            <li><a href="http://www.asx.com.au/">Australian Securities Exchange </a></li>
+                            <li><a href="http://www.superannuation.asn.au/">Association of Superannuation Funds of Australia</a></li>
+                            <li><a href="http://www.nicri.org.au/nicri">National Information Centre on Retirement Investments</a></li>
                         </ul>'
             },
             {
                 "body": '<ul>
-                            <li><a href="#">Taxation Institute of Australia</a></li>
-                            <li><a href="#">Financial Planning Association of Australia</a></li>
-                            <li><a href="#">Business SA</a></li>
-                            <li><a href="#">Australian Securities and Investment Commission</a></li>
-                            <li><a href="#">National Tax and Accountants Association</a></li>
-                            <li><a href="#">Australian Bureau of Statistics</a></li>
-                            <li><a href="#">AusIndustry</a></li>
+                            <li><a href="https://www.taxinstitute.com.au/">Taxation Institute of Australia</a></li>
+                            <li><a href="http://fpa.com.au/">Financial Institute of Australia</a></li>
+                            <li><a href="http://business-sa.com/">Business SA</a></li>
+                            <li><a href="http://asic.gov.au/">Australian Securities &amp; Investments Commission</a></li>
+                            <li><a href="https://ntaa.com.au/">National Tax and Accountants Association</a></li>
+                            <li><a href="http://www.abs.gov.au/">Australian Bureau of Statistics</a></li>
+                            <li><a href="#still-to-come">AusIndustry</a></li>
                         </ul>'
             }
         ]

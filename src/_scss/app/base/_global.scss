@@ -8,11 +8,23 @@
 // Variables
 //-----------------------------------------------------------------
 
-$all-symbol-gutters-large: $symbol-1-left-margin-large + $symbol-2-left-margin-large + $symbol-3-left-margin-large + $symbol-4-left-margin-large + $symbol-5-left-margin-large;
-$all-symbol-gutters-large-high: $symbol-1-left-margin-large-high + $symbol-2-left-margin-large-high + $symbol-3-left-margin-large-high + $symbol-4-left-margin-large-high + $symbol-5-left-margin-large-high;
+$all-symbol-gutters-large: $symbol-1-left-margin-large +
+                           $symbol-2-left-margin-large +
+                           $symbol-3-left-margin-large +
+                           $symbol-4-left-margin-large +
+                           $symbol-5-left-margin-large;
 
-// adhoc
-$end-gutter: $symbol-2-left-margin-large / 2;
+$all-symbol-gutters-large-high: $symbol-1-left-margin-large-high +
+                                $symbol-2-left-margin-large-high +
+                                $symbol-3-left-margin-large-high +
+                                $symbol-4-left-margin-large-high +
+                                $symbol-5-left-margin-large-high;
+
+$all-symbol-gutters-large-highest: $symbol-1-left-margin-large-highest +
+                                $symbol-2-left-margin-large-highest +
+                                $symbol-3-left-margin-large-highest +
+                                $symbol-4-left-margin-large-highest +
+                                $symbol-5-left-margin-large-highest;
 
 //-----------------------------------------------------------------
 // Foundation Overrides (Hacks)
@@ -45,9 +57,6 @@ html, body {
 .lv-page {
     height: 100%;
     margin: 0 auto;
-    // height: 100vh;
-    // width: auto;//($symbol-width-medium + $symbol-gap-width/8) * 5 + $logo-width-small; // 8 is magic
-    // overflow: hidden;
 
     @media #{$small-only} {
         width: auto;
@@ -57,13 +66,17 @@ html, body {
     // Page extends to fill horizontal axis
     @media #{$large-up} {
         display: table;
-        width: calc(#{$logo-width-small} + ((100vh - 80px) * 5) + #{$all-symbol-gutters-large} + #{$end-gutter}); // 58 = hack end gutter
-        // width: 9000px;
+        width: calc(#{$logo-width-small} + ((100vh - 80px) * 5) + #{$all-symbol-gutters-large} + #{$symbol-5-right-margin-large});
     }
 
-    // ** height **
+    // ** height ** (670+)
     @media #{$large-up} and (min-height: 670px)  {
-        width: calc(#{$logo-width-small} + ((100vh - 80px) * 5) + #{$all-symbol-gutters-large-high} + #{$end-gutter}); // 58 = hack end gutter
+        width: calc(#{$logo-width-small} + ((100vh - 80px) * 5) + #{$all-symbol-gutters-large-high} + #{$symbol-5-right-margin-large-high});
+    }
+
+    // ** Highest ** (900+)
+    @media #{$large-up} and (min-height: 900px)  {
+        width: calc(#{$logo-width-small} + ((100vh - 80px) * 5) + #{$all-symbol-gutters-large-highest} + #{$symbol-5-right-margin-large-highest});
     }
 }
 

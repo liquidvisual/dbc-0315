@@ -21,7 +21,7 @@ ul li {
 	padding-left: rem-calc(15);
 
 	li {
-		margin-bottom: rem-calc(5);
+		margin-bottom: 0; //rem-calc(5);
 		padding-bottom: 0;
 
 		a:before {
