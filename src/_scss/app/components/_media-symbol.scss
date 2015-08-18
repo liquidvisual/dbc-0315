@@ -61,11 +61,11 @@
 
 	p, ul {
 		line-height: 1.15;
-		font-size: rem-calc(16);
+		font-size: rem-calc(21); // client request
 
-		@media (min-height: 900px) {
-			font-size: rem-calc(21);
-		}
+		// @media (min-height: 900px) {
+		// 	font-size: rem-calc(21);
+		// }
 	}
 
 	//=========================================
