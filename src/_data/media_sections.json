@@ -2,7 +2,7 @@
     {
         "title": "about",
         "symbol": "/img/template/symbol-plus.svg",
-        "image": "/img/content/video/video-1.png",
+        "image": "/img/content/video/video-1.jpg",
         "video": "video-1",
         "text_position": "mid-left",
         "text": [
@@ -17,7 +17,7 @@
     {
         "title": "services",
         "symbol": "/img/template/symbol-minus.svg",
-        "image": "/img/content/video/video-2.png",
+        "image": "/img/content/video/video-2.jpg",
         "video": "video-2",
         "text_position": "top-left",
         "text": [
@@ -39,7 +39,7 @@
     {
         "title": "resources",
         "symbol": "/img/template/symbol-cross.svg",
-        "image": "/img/content/video/video-3.png",
+        "image": "/img/content/video/video-3.jpg",
         "video": "video-3",
         "text_position": "bottom-left-offset",
         "text": [
@@ -55,7 +55,7 @@
     {
         "title": "links",
         "symbol": "/img/template/symbol-slash.svg",
-        "image": "/img/content/video/video-4.png",
+        "image": "/img/content/video/video-4.jpg",
         "video": "video-4",
         "text_position": "top-left-offset",
         "text": [
@@ -85,7 +85,7 @@
     {
         "title": "contact",
         "symbol": "/img/template/symbol-equals.svg",
-        "image": "/img/content/video/video-5.png",
+        "image": "/img/content/video/video-5.jpg",
         "video": "video-5",
         "text_position": "mid-right",
         "text": [
