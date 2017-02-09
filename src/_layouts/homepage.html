@@ -24,14 +24,20 @@ layout: master
 					</video>
 				</a>
 
-				<div class="media-symbol-text hide {{ item.text_position }}">
+				<div class="media-symbol-text hide {{ item.text_position }} {% if item.text.size > 2 %}has-additional{% endif %}">
 					<div class="media-symbol-text-content">
 						<span class="media-symbol-close-btn js-media-symbol-close-btn show-for-large-up" href="#">&times;</span>
 						<div class="row">
 							{% for text in item.text %}
-								<div class="medium-6 columns">
-									{{ text.body }}
-								</div>
+								{% if forloop.length < 3 %}
+									<div class="medium-6 columns">
+										{{ text.body }}
+									</div>
+								{% else %}
+									<div class="medium-6 large-4 columns">
+										{{ text.body }}
+									</div>
+								{% endif %}
 							{% endfor %}
 						</div>
 					</div>

@@ -42,6 +42,12 @@
 	    width: 60%;
 	}
 
+	&.has-additional {
+		@media #{$large-up} {
+		    width: 90%;
+		}
+	}
+
 	.media-symbol-text-content {
 		@extend .lv-unselectable;
 
