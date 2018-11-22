@@ -4,19 +4,26 @@ layout: master
 
 {% assign media_sections = site.data.media_sections %}
 
+<!-- MEDIA SYMBOL CONTAINER -->
 <div class="media-symbol-container">
+
 	<ul class="media-symbol-block-grid">
 		{% for item in media_sections %}
 			<li class="order-{{forloop.index}} js-media-list-item">
+
+				<!-- MEDIA SYMBOL -->
 				<a class="media-symbol">
+
+					<!-- HEADER -->
 					<h2 class="header">{{ item.title }}</h2>
+
+					<!-- TINT OVERLAY -->
 					<div class="dark-tint-overlay"></div>
 
+					<!-- IMAGE SIZER -->
 					<img class="img" src="{{ item.symbol }}" alt="Symbol">
 
-					<!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-
-					<!-- style="background-image: url({{ item.image }})" -->
+					<!-- VIDEO -->
 					<video autoplay loop muted poster="{{ item.image }}">
 						<source src="/img/content/video/{{ item.video }}.mp4" type="video/mp4">
 						<source src="/img/content/video/{{ item.video }}.webm" type="video/webm">
@@ -24,9 +31,14 @@ layout: master
 					</video>
 				</a>
 
+				<!-- MEDIA SYMBOL -->
 				<div class="media-symbol-text hide {{ item.text_position }} {% if item.text.size > 2 %}has-additional{% endif %}">
 					<div class="media-symbol-text-content">
+
+						<!-- CLOSE BTN -->
 						<span class="media-symbol-close-btn js-media-symbol-close-btn show-for-large-up" href="#">&times;</span>
+
+						<!-- ROW -->
 						<div class="row">
 							{% for text in item.text %}
 								{% if forloop.length < 3 %}
@@ -40,6 +52,7 @@ layout: master
 								{% endif %}
 							{% endfor %}
 						</div>
+
 					</div>
 				</div>
 			</li>

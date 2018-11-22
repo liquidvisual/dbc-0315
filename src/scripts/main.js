@@ -94,7 +94,7 @@ $('.media-symbol-text-content a:not(.media-symbol-close-btn)').click(function(ev
 
 $("html, body").mousewheel(function(event, delta) {
     if ($(window).width() > 767) {
-        this.scrollLeft -= (delta * 1);
+        this.scrollLeft -= (delta * 5); // improved speed
         event.preventDefault();
     }
 });

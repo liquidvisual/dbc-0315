@@ -231,10 +231,10 @@ $include-text-selection-styles: true !default;
 //-----------------------------------------------------------------
 
 @if $include-developer-styles {
-	.developer .row:nth-child(odd) { background-color: #6AE1CC !important; }
+	.developer .row:nth-child(odd) { background-color: rgba(#6AE1CC, 0.4) !important; }
 	.developer .row:nth-child(even),
-	.developer > .row:nth-child(odd) { background-color: #61CFBC !important; }
-	.developer .columns { background-color: #46B0FB !important; }
+	.developer > .row:nth-child(odd) { background-color: rgba(#61CFBC, 0.4) !important; }
+	.developer .columns { background-color: rgba(#46B0FB, 0.4) !important; }
 	.developer hr { border-bottom: 1px solid yellow !important; }
 
 	.lv-super .fill-1 { background-color: #E94144; }

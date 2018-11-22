@@ -1,14 +1,13 @@
 /*
     MODULES.CSS
 
-    - Last updated: 15.07.15
-    - hello@liquidvisual.com
+    - Last updated: 22.11.18, 15.07.15
 */
 //-----------------------------------------------------------------
-// Variables
+// VVARIABLES
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// Media Symbol
+// MEDIA SYMBOL
 //-----------------------------------------------------------------
 
 .media-symbol {
@@ -29,24 +28,13 @@
 }
 
 //-----------------------------------------------------------------
-// Media Text
+// MEDIA TEXT
 //-----------------------------------------------------------------
 
 .media-symbol-text {
 	position: relative;
+	animation-duration: 0.6s;
 	z-index: 100;
-
-	@media #{$large-up} {
-		position: absolute;
-	    // width: rem-calc(250);
-	    width: 60%;
-	}
-
-	&.has-additional {
-		@media #{$large-up} {
-		    width: 90%;
-		}
-	}
 
 	.media-symbol-text-content {
 		@extend .lv-unselectable;
@@ -67,16 +55,51 @@
 
 	p, ul {
 		line-height: 1.15;
-		font-size: rem-calc(21); // client request
+	}
+}
 
-		// @media (min-height: 900px) {
-		// 	font-size: rem-calc(21);
-		// }
+//-----------------------------------------------------------------
+// TEXT WIDTH - AFFECTS THE Y POS FLOW
+//-----------------------------------------------------------------
+
+.media-symbol-text {
+	@media #{$large-up} {
+		position: absolute;
 	}
 
-	//=========================================
-	// Positioning - on large only (absolute)
-	//=========================================
+	// HEIGHT: MACBOOK AIR 11"
+	@media #{$large-up} and (min-height: 600px) { // smallest catered for height
+	    width: 80%;
+	    p, ul { font-size: rem-calc(15); } // best for all symbols
+	    &.has-additional { width: 100%; }
+	}
+
+	// HEIGHT: MACBOOK PRO 13"
+	@media #{$large-up} and (min-height: 634px) { // smallest catered for height
+	    width: 80%;
+	    p, ul { font-size: rem-calc(17); } // best for all symbols
+	    &.has-additional { width: 100%; }
+	}
+
+	// HEIGHT: IPAD LANDSCAPE
+	@media #{$large-up} and (min-height: 660px) {
+	    width: 90%;
+	    p, ul { font-size: rem-calc(19); }
+	}
+
+	// HEIGHT: IPAD PORTRAIT
+	@media #{$large-up} and (min-height: 768px) {
+	    width: 60%;
+	    p, ul { font-size: rem-calc(21); } // client requested size
+	    &.has-additional { width: 90%; } // client requested size
+	}
+}
+
+//-----------------------------------------------------------------
+// Positioning - on large only (absolute)
+//-----------------------------------------------------------------
+
+.media-symbol-text {
 
 	// About
 	&.mid-left {
@@ -113,15 +136,12 @@
 	// Contact
 	&.mid-right {
 		@media #{$large-up} {
-			top: 44%;
+			bottom: 5%; // patch 22.11.18
+			//top: 44%;
 			right: 0;
+			width: 75%; // patch 22.11.18
 		}
 	}
-
-	-webkit-animation-duration: 0.6s;
-	-moz-animation-duration: 0.6s;
-	-o-animation-duration: 0.6s;
-	animation-duration: 0.6s;
 }
 
 //-----------------------------------------------------------------
